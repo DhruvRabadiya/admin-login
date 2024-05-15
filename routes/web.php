@@ -7,7 +7,5 @@ Route::get('/', function () {
     return view('login');
 });
 
-
-Route::get('/profile', [loginController::class, 'login']);
 Route::get('/profile', [ProfileController::class, 'profile']);
 
